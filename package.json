@@ -1,0 +1,22 @@
+{
+  "name": "weather_app_nodejs",
+  "version": "1.0.0",
+  "description": "simple node.js weather app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gyGil/weather_app_nodejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gyGil/weather_app_nodejs/issues"
+  },
+  "homepage": "https://github.com/gyGil/weather_app_nodejs#readme",
+  "dependencies": {
+    "request": "^2.73.0"
+  }
+}
