@@ -1,5 +1,8 @@
-const request = require('request');
+
 const yargs = require('yargs');
+
+const geocode = require('./geocode/geocode');
+const weather = require('./weather/weather');
 
 const argv = yargs
     .option({
@@ -14,13 +17,6 @@ const argv = yargs
     .alias('h', 'help')
     .argv;
 
-var encodedAddress = encodeURIComponent(argv.address)
-// [NOTE] OVER_QUERY_LIMIT: http://links.mead.io/api-fix
-request({
-    url: `https://maps.googleapis.com/maps/api/geocode/json?&address=${encodedAddress}`,
-    json: true
-}, (error, response, body) => {
-    console.log(`Address: ${body.results[0].formatted_address}`);
-    console.log(`Latitude: ${body.results[0].geometry.location.lat}`);
-    console.log(`Longitude: ${body.results[0].geometry.location.lng}`);
-});
+
+ 
+  
