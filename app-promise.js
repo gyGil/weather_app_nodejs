@@ -24,7 +24,7 @@ axios.get(geocodeUrl).then((response) => {
 
     var lat = response.data.results[0].geometry.location.lat;
     var lng = response.data.results[0].geometry.location.lng;
-    var weatherUrl = `https://api.darksky.net/forecast/1bd5c99c378aa6a296f12dda1c2ab82c/${lat},${lng}`;
+    var weatherUrl = `https://api.darksky.net/forecast/[key]/${lat},${lng}`;
     console.log(response.data.results[0].formatted_address);
 
     return axios.get(weatherUrl);
